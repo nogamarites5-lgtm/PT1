@@ -1,33 +1,223 @@
 <!DOCTYPE html>
-
-<html lang="en"> 
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="styles/style.css"/>
-  <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ant and the Grasshopper: A Tale of Balance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 1.5rem;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        .story-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 2rem auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .story-image:hover {
+            transform: scale(1.02);
+        }
+
+        .story {
+            text-align: justify;
+        }
+
+        .story p {
+            margin-bottom: 1.5rem;
+            text-indent: 2rem;
+        }
+
+        .story p:first-letter {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        a.word-link {
+            color: #667eea;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: 500;
+            position: relative;
+        }
+
+        a.word-link:hover {
+            color: #764ba2;
+            text-decoration: underline wavy;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 220px;
+            background-color: #764ba2;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -110px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            font-style: normal;
+            font-weight: normal;
+            text-indent: 0;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #764ba2 transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .definitions {
+            background-color: #f0f4ff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            border-left: 4px solid #667eea;
+        }
+
+        .definitions h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .definition {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .definition-word {
+            color: #764ba2;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .definition-meaning {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid #ddd;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>The Ant and the Grasshopper</h1>
+            <p class="subtitle">A Tale of Balance</p>
+        </header>
 
-   <h2><q> The Ant and The Grasshoper </q></h2>
-  <img srcset="/storage/emulated/0/Pictures/1770690398527_1.png" height="200" width="965">
-  <ul>
-        <li><a href="http://4vUwtAd2wmrZCX5:ct5v1WhYHOENE4S@localhost:39651/storage/emulated/0/Code/yeah.html"><h3><button><cite>FULL STORY</cite></button></h3></a></li>
-    </ul>
-  <p>In a sunlit meadow lived Pip the ant and Zephyr the grasshopper. Pip was diligent—from dawn till dusk, he and his colony gathered seeds, grains, and fruit, storing them in their underground nest. He knew summer wouldn’t last, and they needed food for winter.</p>
- 
-  <p>Zephyr, though, was a carefree musician. He hopped from grass to flower, playing his leaf guitar and singing songs of joy. When he saw Pip toiling with heavy loads, he’d call out, “<cite>Why work so hard? The sun’s shining—come play with me!</cite>”</p>
-  
-  <p>Pip would smile and reply, “<cite>We must prepare, or we’ll go hungry</cite>” Zephyr just laughed, saying winter was far away, and went back to his music.</p>
-  
-  <p>As Summer faded, the grew cols and the <a href="">winter</a> comes. Pip and the ants worked faster, filling their nest with food. Zephyr kept putting off work, telling himself he’d start “<cite>tomorrow</cite>.” But soon, frost covered the meadow. All food was buried, and Zephyr shivered, hungry and alone. He remembered Pip’s words and felt regret—he’d played all summer and had nothing left.</p>
+        <!-- Image added here -->
+        <img src="/storage/emulated/0/Pictures/1770690398527_1.png" alt="The Ant and the Grasshopper" class="story-image" id="storyImage">
 
-  <p>Weak and cold, Zephyr went to the ants’ nest. “<cite>Pip, I’m hungry and have nowhere to go,</cite>” he whispered. “<cite>I was foolish not to listen.</cite>”</p>
+        <div class="story">
+            <p>
+                In a sunlit meadow lived Pip the ant and Zephyr the grasshopper. Pip was 
+                <a href="Definition.html">Diligient</a>
+                    
+                —from dawn till dusk, he and his colony gathered seeds, grains, and fruit, storing them in their underground nest. He knew summer wouldn't last, and they needed food for winter.
+            </p>
+
+            <p>
+                Zephyr, though, was a <a href="Definition.html">carefree</a>
+                  
+                musician. He hopped from grass to flower, playing his leaf guitar and singing songs of joy. When he saw Pip toiling with heavy loads, he'd call out, "Why work so hard? The sun's shining—come play with me!"
+            </p>
+
+            <p>
+                Pip would smile and reply, "Winter's coming. We must prepare, or we'll go hungry." Zephyr just laughed, saying winter was far away, and went back to his music.
+            </p>
+
+            <p>
+                As summer faded, the days grew short and cold and the <a href="Image.html">winter</a> came. Pip and the ants worked faster, filling their nest with food. Zephyr kept putting off work, telling himself he'd start "tomorrow." But soon, 
+                <a href="Definition.html">frost</a> covered the meadow. All food was buried, and Zephyr shivered, hungry and alone. He remembered Pip's words and felt 
+                regret —he'd played all summer and had nothing left.
+            </p>
+
+            <p>
+                Weak and cold, Zephyr went to the ants' nest. "Pip, I'm hungry<a href="Sound.html">(growling belly)</a> and have nowhere to go," he whispered. "I was foolish not to listen."
+            </p>
+
+     </div>
+    
+    <div class="back-link">
+        <a href="https://read.gov/aesop/052.html">← Full Story</a>
+    </div>
+
   
-  <p>Pip opened the door warmly. “<cite>Come in! We have plenty of food and a warm nest.</cite>” Inside, Zephyr ate, rested, and helped with small tasks—sorting seeds, mending the nest. He learned the value of hard work and preparation.  </p>
-  
-  <p>When spring came, Zephyr picked up his leaf guitar again. But now, he worked in the morning, gathering food and helping the ants, and played music in the evening. He found a balance between enjoying the moment and planning for the future.</p>
-  
-  <p>Pip and Zephyr became best friends, and their story spread through the meadow: it’s wonderful to play and sing, but it’s also important to work and prepare—so when cold days come, you have something to hold onto.</p>
-  
-</body>
-</html>
